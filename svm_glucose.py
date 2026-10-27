@@ -197,11 +197,6 @@ print(slope)
 y_intercept = -b / w[1]
 print(y_intercept)
 
-# now create a sequence of x and y coordindates for the
-# classifier (the straight line) so we can plot it.
-classifier_x = np.linspace(X_linear_test.min(), X_linear_test.max(), 100)
-classifier_y = slope * classifier_x + y_intercept
-
 # now plot the transformed test data and the classifier
 fig, ax = plt.subplots()
 sns.scatterplot(data=X_linear_test, 
